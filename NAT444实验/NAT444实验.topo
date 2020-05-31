@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="A6E1621B-2737-418f-BE1F-AC3450EAC70B" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.0.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.0.1  -simpc_mac 54-89-98-53-48-45  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-53-48-45" com_port="0" bootmode="0" cx="133.000000" cy="613.000000" edit_left="160" edit_top="667">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="7486CDEE-7150-437d-A52E-4254DD9BB02C" name="CGN" poe="0" model="USG6000V" settings="" system_mac="00-E0-FC-8E-37-3A" com_port="2001" bootmode="0" cx="613.000000" cy="373.000000" edit_left="653" edit_top="424">
+            <slot id="1">
+                <interface category="Ethernet" type="GE" slotIndex="0" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="1" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="2" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="3" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="4" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="5" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="6" />
+            </slot>
+        </dev>
+        <dev id="653C4346-C2D4-4723-AC08-5987527FAEAF" name="CPE" poe="0" model="USG6000V" settings="" system_mac="00-E0-FC-0E-13-A8" com_port="2000" bootmode="0" cx="293.000000" cy="453.000000" edit_left="338" edit_top="505">
+            <slot id="1">
+                <interface category="Ethernet" type="GE" slotIndex="0" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="1" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="2" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="3" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="4" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="5" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="6" />
+            </slot>
+        </dev>
+        <dev id="A852C585-E974-43c3-9EF1-4F9A61C4A844" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-27-32-60" com_port="2003" bootmode="0" cx="853.000000" cy="373.000000" edit_left="880" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="5411ECA9-8BF9-4911-A8B3-18F4990A0D2B" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-09-45-25" com_port="2002" bootmode="0" cx="479.000000" cy="455.000000" edit_left="506" edit_top="509">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A6E1621B-2737-418f-BE1F-AC3450EAC70B" destDeviceID="653C4346-C2D4-4723-AC08-5987527FAEAF">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="190.535538" srcBoundRect_Y="609.464478" srcOffset_X="2.000000" srcOffset_Y="7.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="289.464478" tarBoundRect_Y="510.535522" tarOffset_X="-37.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="653C4346-C2D4-4723-AC08-5987527FAEAF" destDeviceID="5411ECA9-8BF9-4911-A8B3-18F4990A0D2B">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="363.181274" srcBoundRect_Y="480.464325" srcOffset_X="-9.000000" srcOffset_Y="-21.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="462.818726" tarBoundRect_Y="481.535675" tarOffset_X="-36.000000" tarOffset_Y="-20.000000" />
+        </line>
+        <line srcDeviceID="5411ECA9-8BF9-4911-A8B3-18F4990A0D2B" destDeviceID="7486CDEE-7150-437d-A52E-4254DD9BB02C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="542.834351" srcBoundRect_Y="459.459595" srcOffset_X="-4.000000" srcOffset_Y="10.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="603.165649" tarBoundRect_Y="422.540405" tarOffset_X="-36.000000" tarOffset_Y="-20.000000" />
+        </line>
+        <line srcDeviceID="7486CDEE-7150-437d-A52E-4254DD9BB02C" destDeviceID="A852C585-E974-43c3-9EF1-4F9A61C4A844">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="683.183777" srcBoundRect_Y="400.000000" srcOffset_X="-23.000000" srcOffset_Y="-19.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="836.816223" tarBoundRect_Y="400.000000" tarOffset_X="-35.000000" tarOffset_Y="-22.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="4259584" upleftcorner="319,360" width="318" height="182" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="1" filloption="0" color="4227327" upleftcorner="116,407" width="199" height="277" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="1" filloption="0" color="16711808" upleftcorner="643,329" width="311" height="135" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="1" filloption="0" color="16711808" upleftcorner="1107,605" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="2" filloption="0" color="16776960" upleftcorner="423,390" width="158" height="149" startpt="0,0" endpt="0,0" borderStyle="4" borderWidth="4" />
+    </shapes>
+    <txttips>
+        <txttip left="187" top="659" right="308" bottom="678" content="192.168.0.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="118" top="407" right="213" bottom="427" content="用户测私网" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="175" top="463" right="296" bottom="482" content="192.168.0.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="331" top="435" right="427" bottom="454" content="10.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="390" top="497" right="486" bottom="516" content="10.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="537" top="485" right="633" bottom="504" content="10.1.2.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="517" top="375" right="613" bottom="394" content="10.1.2.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="672" top="407" right="759" bottom="426" content="1.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="768" top="408" right="855" bottom="427" content="1.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="831" top="358" right="943" bottom="377" content="Lo:2.2.2.2/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="320" top="361" right="415" bottom="381" content="运营商私网" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="644" top="332" right="685" bottom="352" content="公网" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="467" top="406" right="530" bottom="442" content="IPv4&#x0D;&#x0A;Network" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="902" top="379" right="956" bottom="398" content="Server" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+    </txttips>
+</topo>

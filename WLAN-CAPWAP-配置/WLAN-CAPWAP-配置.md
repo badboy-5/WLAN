@@ -10,7 +10,7 @@ AP选择AP4030，AC选择AC6005，AP无法通过sysname更改设备名
 [SW1]int g0/0/1
 [SW1-GigabitEthernet0/0/1]port link-type trunk  //配置接口类型
 [SW1-GigabitEthernet0/0/1]port trunk pvid vlan 10  //
-[SW1-GigabitEthernet0/0/1]port trunk allow-pass vlan 10 11 12  //配置trunk接口允许通过的VLAN
+[SW1-GigabitEthernet0/0/1]port trunk allow-pass vlan 10 20 30  //配置trunk接口允许通过的VLAN
 
 [SW1]int g0/0/2
 [SW1-GigabitEthernet0/0/2]port link-type trunk .
@@ -118,7 +118,7 @@ Warning: This operation may cause AP reset. If the country code changes, it will
 # VAP模板调用SSID模板
 [AC1-wlan-view]vap-profile name 1
 [AC1-wlan-vap-prof-1]forward-mode direct-forward  //直接转发模式
-[AC1-wlan-vap-prof-1]service-vlan vlan-id 20  //指定业务WLAN
+[AC1-wlan-vap-prof-1]service-vlan vlan-id 20  //指定业务VLAN
 [AC1-wlan-vap-prof-1]security-profile 1  //调用安全模板
 [AC1-wlan-vap-prof-1]ssid-profile 1  //调用SSID模板
 [AC1-wlan-vap-prof-1]q
